@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('img/foto.jpg');
+    background: url('img/backgroundImage.png');
     background-size: cover;
     background-position: center;
 }
@@ -21,7 +21,8 @@ body {
     border-radius: 10px;
     color: #fff;
     padding: 30px 40px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: 0 0 10px, rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(50px);
 }
 
 .container h1 {
@@ -39,7 +40,7 @@ body {
 .input-box input {
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .1);
     border: none;
     outline: none;
     font-size: 16px;
@@ -48,7 +49,7 @@ body {
 }
 
 .input-box input::placeholder {
-    color: #999;
+    color: #fff;
 }
 
 .input-box i {
@@ -57,4 +58,56 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px, 0 15px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
 }
